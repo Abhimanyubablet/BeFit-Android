@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:id="@+id/top_navbar"
+        android:layout_marginBottom="500dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/settings_24"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/profile_img"
+            android:layout_toRightOf="@+id/setting"
+            android:gravity="center"
+            android:layout_marginTop="-30dp"
+            android:layout_width="230dp"
+            android:layout_height="200dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_img"
+                android:layout_width="150dp"
+                android:layout_marginTop="40dp"
+                android:layout_height="90dp"
+                app:civ_border_width="4dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/people"
+                app:civ_border_color="#FF000000" />
+            <TextView
+                android:id="@+id/Text_name"
+                android:layout_below="@+id/user_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/user"
+           android:layout_toRightOf="@+id/profile_img"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/people_a24"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/statistics"
+        android:layout_below="@+id/top_navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My statistics"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-490dp"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/main_static"
+        android:layout_below="@+id/statistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        >
+       <RelativeLayout
+           android:id="@+id/workout"
+           android:layout_width="110dp"
+           android:layout_height="140dp"
+           android:layout_margin="5dp"
+           >
+           
+           <ImageView
+               android:id="@+id/workout_img"
+               android:layout_width="70dp"
+               android:layout_height="50dp"
+               android:layout_marginLeft="25dp"
+               android:src="@drawable/people_a24"
+               />
+           <TextView
+               android:id="@+id/workout_num"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="149"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:textAlignment="center"
+               android:textColor="@color/white"
+               android:layout_below="@id/workout_img"
+               />
+           <TextView
+               android:id="@+id/workout_text"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Workouts total"
+               android:textAlignment="center"
+               android:layout_below="@+id/workout_num"
+               />
+
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/calories"
+            android:layout_toRightOf="@+id/workout"
+            android:layout_width="110dp"
+            android:layout_height="140dp"
+            android:layout_margin="5dp"
+            >
+            <ImageView
+                android:id="@+id/calories_img"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/baseline_local_fire_department_24"
+                />
+            <TextView
+                android:id="@+id/calories_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18900"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_below="@id/calories_img"
+                />
+            <TextView
+                android:id="@+id/calories_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calories burnt"
+                android:textAlignment="center"
+                android:layout_below="@+id/calories_num"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reward"
+            android:layout_toRightOf="@+id/calories"
+            android:layout_width="110dp"
+            android:layout_height="140dp"
+            android:layout_margin="5dp"
+            >
+            <ImageView
+                android:id="@+id/reward_img"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/add_reaction_24"
+                />
+            <TextView
+                android:id="@+id/reward_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="53"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_below="@id/reward_img"
+                />
+            <TextView
+                android:id="@+id/reward_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rewards collected"
+                android:textAlignment="center"
+                android:layout_below="@+id/reward_num"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/leaderboard"
+        android:layout_below="@+id/main_static"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leaderboard"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/heading_list"
+        android:layout_below="@+id/leaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/user_image"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Image"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_toRightOf="@+id/user_image"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/user_month"
+            android:layout_toRightOf="@+id/user_name"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Month"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            />
+
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/recycle"
+    android:layout_below="@+id/heading_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:orientation="vertical"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Name"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColorHint="@color/black"
+        android:layout_below="@+id/recyclerview"
+        android:backgroundTint="@color/black"
+        />
+</RelativeLayout>
+
+
+
+</RelativeLayout>
+

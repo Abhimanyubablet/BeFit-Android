@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".UserGenderActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/top_menu"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skip"
+            android:textColor="@color/white"
+            android:layout_marginStart="250dp"
+            />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/gender_heading"
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="40sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/gender_desc"
+        android:layout_below="@+id/gender_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gender_desc"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="14sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/male"
+        android:layout_below="@+id/gender_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="15sp"
+        >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/male_icon"
+            android:padding="55sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/female"
+        android:layout_toEndOf="@+id/male"
+        android:layout_below="@+id/gender_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="15sp"
+        >
+
+        <ImageView
+            android:id="@+id/female_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/female_icon"
+            android:padding="55sp"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+      <TextView
+          android:id="@+id/text_male"
+          android:layout_below="@+id/male"
+          android:textAlignment="center"
+          android:layout_width="170dp"
+          android:textSize="20sp"
+          android:textColor="@color/white"
+          android:layout_height="wrap_content"
+          android:text="@string/male"
+          />
+
+    <TextView
+        android:id="@+id/text_female"
+        android:layout_below="@+id/female"
+        android:layout_toEndOf="@+id/text_male"
+        android:textAlignment="center"
+        android:layout_width="190dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="@string/female"
+        />
+
+
+    <TextView
+        android:id="@+id/none_above"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/male"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="85dp"
+        android:text="@string/none_above"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/none_above"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/blue"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:text="@string/btn_continue" />
+
+</RelativeLayout>

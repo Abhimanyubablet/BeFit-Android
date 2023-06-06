@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">BeFit</string>
+    <string name="the">THE</string>
+    <string name="fitness">FITNESS</string>
+    <string name="finest">FINEST</string>
+    <string name="be">Be</string>
+    <string name="fit">Fit</string>
+    <string name="pocket_para">Your pocket fitness coach</string>
+    <string name="started">Get Started</string>
+    <string name="create_account">Create an account</string>
+    <string name="text_email">Enter your email *</string>
+    <string name="edit_email">a@gmail.com</string>
+
+    <string name="text_pass">Create Password *</string>
+    <string name="edit_pass">********</string>
+
+    <string name="text_repeat_pass">Repeat Password *</string>
+    <string name="edit_repeat_pass">********</string>
+
+    <string name="signup">SIGN UP</string>
+
+    <string name="already_account">You have already an account ? </string>
+    <string name="login"> Log In</string>
+
+    <string name="login_email"> Email </string>
+    <string name="login_password"> Password </string>
+
+    <string name="signin">SIGN IN</string>
+
+    <string name="not_account">Don\'t have an account ? </string>
+    <string name="log_signup">Sign Up</string>
+    <string name="skip">Skip</string>
+    <string name="gender">What is your gender ? </string>
+
+    <string name="gender_desc">Let us know you better </string>
+    <string name="male">Male </string>
+    <string name="female">Female</string>
+
+    <string name="none_above">None of the above</string>
+    <string name="btn_continue">Continue </string>
+
+    <string name="h_157">157</string>
+    <string name="h_158">158</string>
+    <string name="text_height">Height</string>
+    <string name="h_159">159 cm</string>
+    <string name="h_160">160</string>
+    <string name="h_161">161</string>
+    <string name="weight">Weight </string>
+    <string name="w_58">58 kg </string>
+    <string name="height"> Your height &amp; weight ? </string>
+
+    <string name="your_goal">What is your goal ? </string>
+
+    <string name="fitter">Get Fitter </string>
+    <string name="tone">Tone up and fell healthy </string>
+    <string name="gain_muscles">Gain muscles </string>
+    <string name="build_muscles"> Build mass and strength </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="most_popular_workouts">Most Popular workouts</string>
+</resources>

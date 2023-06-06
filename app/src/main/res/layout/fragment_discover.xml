@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".DiscoverFragment">
+
+   <RelativeLayout
+       android:id="@+id/edit_main"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       >
+
+       <androidx.appcompat.widget.SearchView
+           android:id="@+id/search"
+           android:layout_width="280dp"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:textColorHint="@color/white"
+           android:textColor="@color/white"
+           app:iconifiedByDefault="false"
+           app:queryHint="@string/search"
+           android:background="@color/light_blue"
+           />
+       <ImageView
+           android:id="@+id/menu"
+           android:layout_toEndOf="@+id/search"
+           android:layout_width="100dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginEnd="10dp"
+           android:layout_height="48dp"
+           android:src="@drawable/menu"
+           android:background="@color/light_blue"
+           />
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/popular_workout_heading"
+        android:layout_below="@+id/edit_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/most_popular_workouts"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popular_workout_heading">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card1">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/boy_card1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="10dp"
+                        >
+                        <RelativeLayout
+                            android:id="@+id/lose_weight1"
+                            android:layout_width="300dp"
+                            android:layout_height="200dp"
+                            android:padding="15dp"
+                            android:background="@drawable/boy_image"
+                            >
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/boy_card2"
+                        android:layout_toRightOf="@+id/boy_card1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="10dp"
+                        >
+                        <RelativeLayout
+                            android:id="@+id/lose_weight2"
+                            android:layout_width="300dp"
+                            android:layout_height="200dp"
+                            android:padding="15dp"
+                            android:background="@drawable/boyy"
+                            >
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+        </HorizontalScrollView>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".GoalActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/top_menu"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skip"
+                android:textColor="@color/white"
+                android:layout_marginStart="250dp"
+                />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/gender_heading"
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_goal"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="40sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/gender_desc"
+        android:layout_below="@+id/gender_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gender_desc"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="14sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/user_card"
+        android:layout_below="@+id/gender_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+    <RelativeLayout
+        android:id="@+id/lose_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+
+
+        >
+        <RelativeLayout
+            android:id="@+id/lose_weight_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            >
+        <TextView
+            android:id="@+id/lose_weight_para"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lose Weight"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+            <TextView
+                android:id="@+id/lose_burnfat_para"
+                android:layout_below="@+id/lose_weight_para"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burn fat and get learn"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                tools:ignore="DuplicateIds" />
+            <ImageView
+                android:id="@+id/lose_burnfat_image"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/lose_weight_para"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/baseline_local_fire_department_24" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/user_card2"
+        android:layout_below="@+id/user_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <RelativeLayout
+            android:id="@+id/fit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+
+
+            >
+            <RelativeLayout
+                android:id="@+id/fit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                >
+                <TextView
+                    android:id="@+id/fit_para"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fitter"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:id="@+id/tone_para"
+                    android:layout_below="@+id/fit_para"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tone"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+                <ImageView
+                    android:id="@+id/tone_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_toEndOf="@+id/fit_para"
+                    android:layout_marginStart="50dp"
+                    android:src="@drawable/baseline_heart_broken_24" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/user_card3"
+        android:layout_below="@+id/user_card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <RelativeLayout
+            android:id="@+id/gain_muscles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+
+
+            >
+            <RelativeLayout
+                android:id="@+id/gain_muscles_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                >
+                <TextView
+                    android:id="@+id/gain_muscles_para"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gain_muscles"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:id="@+id/bulid_mass_para"
+                    android:layout_below="@+id/gain_muscles_para"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/build_muscles"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateIds" />
+                <ImageView
+                    android:id="@+id/bulid_mass_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_toEndOf="@+id/gain_muscles_para"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/toggle_24" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_card3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/blue"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:text="@string/btn_continue" />
+
+
+</RelativeLayout>
+
+
